@@ -1,0 +1,1 @@
+V	111211084005Z		00	unknown	/C=JP/ST=Tokyo/O=Nippon C.A.D. Co.,Ltd./OU=IT Division/CN=client.sub.localdomain/emailAddress=komata@ncad.co.jp

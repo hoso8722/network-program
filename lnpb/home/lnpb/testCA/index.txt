@@ -1,0 +1,4 @@
+V	131124193117Z		00	unknown	/C=JP/ST=Tokyo/O=Nippon C.A.D. Co.,Ltd./OU=IT Division/CN=Root CA/emailAddress=komata@ncad.co.jp
+V	111125194424Z		01	unknown	/C=JP/ST=Tokyo/O=Nippon C.A.D. Co.,Ltd./OU=IT Division/CN=localhost.localdomain/emailAddress=komata@ncad.co.jp
+V	111125225304Z		02	unknown	/C=JP/ST=Tokyo/O=Nippon C.A.D. Co.,Ltd./OU=IT Division/CN=localhost.localdomain/emailAddress=komata@ncad.co.jp
+V	111211083337Z		03	unknown	/C=JP/ST=Tokyo/O=Nippon C.A.D. Co.,Ltd./OU=IT Division/CN=Sub CA/emailAddress=komata@ncad.co.jp
