@@ -13,16 +13,11 @@ else ifeq ($(ARCH), arm64)
 	# ARM用のコンパイルオプション
 	CC = clang
 	CFLAGS = -g -Wall
-	LDFLAGS = 
+	LDFLAGS =
 	PROGRAM =       arm_$(MAKEFILE_NAME)
 	OBJS    =       arm_$(MAKEFILE_NAME).o
-	SRCS    =       $(MAKEFILE_NAME).c
-
+	SRCS    =       $(OBJS:%.o=%.c)
 endif
 
-#オブジェクトファイルを作成
-# $(OBJS):$(SRCS)
-# 	$(CC) $(CFLAGS) $(LDFLAGS) -c -o $(OBJS) $(SRCS)
-
-$(PROGRAM):# $(OBJS)
-	$(CC) $(CFLAGS) $(LDFLAGS) -o $(PROGRAM) $(SRCS) $(LDLIBS)
+$(PROGRAM):$(OBJS)
+	$(CC) $(CFLAGS) $(LDFLAGS) -o $(PROGRAM) $(OBJS) $(LDLIBS)
