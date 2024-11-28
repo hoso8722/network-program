@@ -19,6 +19,8 @@
 #define NUM_CHILD 2
 #define LOCK_FILE "./server7.lock"
 int g_lock_fd = -1;
+
+int send_recv_loop(int);
 /* サーバソケットの準備 */
 int
 server_socket(const char *portnm)

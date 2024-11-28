@@ -16,6 +16,8 @@
 #include <string.h>
 #include <sysexits.h>
 #include <unistd.h>
+
+int send_recv(int, int);
 /* サーバソケットの準備 */
 int
 server_socket(const char *portnm)

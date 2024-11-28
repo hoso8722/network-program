@@ -18,8 +18,21 @@
 
 int server_socket(const char *portnm)
 {
+	// #define NI_MAXHOST 1025
+	// #define NI_MAXSERV 32
 	char nbuf[NI_MAXHOST], sbuf[NI_MAXSERV];
+	// struct addrinfo {
+	// 	int	ai_flags;	/* AI_PASSIVE, AI_CANONNAME, AI_NUMERICHOST */
+	// 	int	ai_family;	/* PF_xxx */
+	// 	int	ai_socktype;	/* SOCK_xxx */
+	// 	int	ai_protocol;	/* 0 or IPPROTO_xxx for IPv4 and IPv6 */
+	// 	socklen_t ai_addrlen;	/* length of ai_addr */
+	// 	char	*ai_canonname;	/* canonical name for hostname */
+	// 	struct	sockaddr *ai_addr;	/* binary address */
+	// 	struct	addrinfo *ai_next;	/* next structure in linked list */
+	// };
 	struct addrinfo hints, *res0;
+	// int soc <- return int socket()
 	int soc, opt, errcode;
 	socklen_t opt_len;
 

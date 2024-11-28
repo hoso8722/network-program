@@ -36,6 +36,8 @@ struct queue {
 };
 
 struct queue g_queue[MAXSENDER];
+
+int send_recv(int, int);
 /* サーバソケットの準備 */
 int
 server_socket(const char *portnm)

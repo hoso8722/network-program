@@ -19,6 +19,8 @@
 #define NUM_CHILD       2
 pthread_mutex_t g_lock = PTHREAD_MUTEX_INITIALIZER;
 int g_lock_id = -1;
+
+int send_recv(int, int);
 /* サーバソケットの準備 */
 int
 server_socket(const char *portnm)

@@ -15,6 +15,8 @@
 #include <string.h>
 #include <sysexits.h>
 #include <unistd.h>
+
+int recv_data(void);
 /* ソケット */
 int g_soc = -1;
 /* 終了フラグ */
